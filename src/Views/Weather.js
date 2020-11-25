@@ -7,8 +7,7 @@ var correctName = true;
 export default function Weather(props) {
     return (
         <div>
-            <h1>10 Day Forcast!</h1>
-            <h2>{props.location.props.location}</h2>
+            <h1>5 Day Forcast for {props.location.props.location}</h1>
         </div>
     )
 }
