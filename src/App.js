@@ -13,9 +13,7 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/weather">
-          <Weather />
-        </Route>
+        <Route path="/weather" render={(props) => <Weather {...props}/>}/>
         <Route path="/getinfo">
           <GetInfo />
         </Route>
