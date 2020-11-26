@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios';
+import '../weather.css';
 
 
 const KEY = "d7908f4f11ef423aa9854244202511";
@@ -29,11 +30,13 @@ export default function Weather(props) {
 
                 {forecast.map(day =>{
                    return( 
-                   <div>
-                    <img src={day.day.condition.icon} alt="conditions"></img>
-                    <h3>{day.date}</h3>
-                    <p>{day.day.avgtemp_f}</p>
-                   <p>{day.day.condition.text}</p>
+                    <div className="Row">
+                        <div className="Col">
+                            <img src={day.day.condition.icon} alt="conditions"></img>
+                            <h3>{day.date}</h3>
+                            <p>{day.day.avgtemp_f}</p>
+                            <p>{day.day.condition.text}</p>
+                        </div>
                    </div>
                    );
                 })}
