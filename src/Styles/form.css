@@ -1,0 +1,21 @@
+.button{
+-webkit-box-shadow: inset -3px -3px 10px #cc870a;
+   box-shadow: inset -3px -3px 10px #cc870a;
+   background-color: #f7b31c; /* Fill color */
+   color: white; /* Text color */
+   border-radius: 15px; /* Rounded button edges */
+   font-style: italic; /* Italicize text */
+   padding: 10px 30px; /* Distance between text and border */
+   margin-top: 20px;
+}
+
+.fields{
+   -moz-box-shadow: inset -3px -3px 10px #eee;
+   -webkit-box-shadow: inset -3px -3px 10px #eee;
+   box-shadow: inset -3px -3px 10px #eee;
+   border-radius: 15px;
+}
+
+.formdiv{
+    padding-top: 100px;
+}

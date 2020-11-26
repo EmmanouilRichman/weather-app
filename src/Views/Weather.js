@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios';
-import '../weather.css';
+import '../Styles/weather.css';
 
 
 const KEY = "d7908f4f11ef423aa9854244202511";
@@ -23,24 +23,22 @@ export default function Weather(props) {
         }
         fetch();
     }, [URL]);
-    // console.log(forecast[0].date);
     return (
         <div>
-            <h1>Three Day forecast for {name}, {region}, {country}</h1>
-
+            <h1 className="header">Three Day forecast for {name}, {region}, {country}</h1>
+            <div className="Row">
                 {forecast.map(day =>{
                    return( 
-                    <div className="Row">
+                    // <div className="Row">
                         <div className="Col">
                             <h3>{day.date}</h3>
                             <img src={day.day.condition.icon} alt="conditions"></img>
                             <p>{day.day.avgtemp_f}<span>&#8457;</span></p>
                             <p>{day.day.condition.text}</p>
                         </div>
-                   </div>
                    );
                 })}
-        
+            </div>
         </div>
     )
 }
