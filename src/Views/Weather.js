@@ -26,15 +26,15 @@ export default function Weather(props) {
     // console.log(forecast[0].date);
     return (
         <div>
-            <h1>3 Day forecast for {name}, {region}, {country}</h1>
+            <h1>Three Day forecast for {name}, {region}, {country}</h1>
 
                 {forecast.map(day =>{
                    return( 
                     <div className="Row">
                         <div className="Col">
-                            <img src={day.day.condition.icon} alt="conditions"></img>
                             <h3>{day.date}</h3>
-                            <p>{day.day.avgtemp_f}</p>
+                            <img src={day.day.condition.icon} alt="conditions"></img>
+                            <p>{day.day.avgtemp_f}<span>&#8457;</span></p>
                             <p>{day.day.condition.text}</p>
                         </div>
                    </div>

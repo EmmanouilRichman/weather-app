@@ -1,5 +1,12 @@
 .Row{
-    float: inline-start;
-    justify-content: center;
+    /* float: inline-start;
+    justify-content: center; */
+    flex: left;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.Col{
+    border: 1px solid black;
 }
 

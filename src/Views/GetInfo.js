@@ -13,9 +13,9 @@ function handleSubmit(){
     if(redirect === false){
     return (
         <div>
-            <h1>Please Enter Your Desired City</h1>
+            <h1>Please Enter Your Desired City/Zip</h1>
             <form onSubmit={handleSubmit}>
-               <label>City: </label>
+               <label>City/Zip: </label>
                <input type="text" value={city} onChange={e => setCity(e.target.value)} required />
                <br></br>
                 <button type="submit" value="Submit">Submit</button>
