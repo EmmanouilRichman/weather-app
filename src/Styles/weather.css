@@ -10,7 +10,9 @@
 .Col{
     display: table-cell;
     border: 1px solid black;
-    background-color: white;
+    font-weight: bolder;
+    background: rgba(255, 255, 255, 0.4);
+    
 }
 
 .header{

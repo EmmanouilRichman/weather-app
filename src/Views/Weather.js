@@ -25,7 +25,8 @@ export default function Weather(props) {
     }, [URL]);
     return (
         <div>
-            <h1 className="header">Three Day forecast for {name}, {region}, {country}</h1>
+            <h1 className="header">Three Day forecast for...</h1>
+            <h3>{name}, {region}, {country}</h3>
             <div className="Row">
                 {forecast.map(day =>{
                    return( 
