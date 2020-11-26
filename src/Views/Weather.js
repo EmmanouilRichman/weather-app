@@ -8,7 +8,7 @@ export default function Weather(props) {
     const[region, setRegion] = useState('');
     const[country, setCountry] = useState('');
     const[forecast, setForecast] = useState([]);
-    const URL = `http://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${props.location.props.location}&days=3`
+    const URL = `https://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${props.location.props.location}&days=3`
 
      useEffect(() => {
         const fetch = async () =>{
