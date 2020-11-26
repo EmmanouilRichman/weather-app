@@ -29,7 +29,6 @@ export default function Weather(props) {
             <div className="Row">
                 {forecast.map(day =>{
                    return( 
-                    // <div className="Row">
                         <div className="Col">
                             <h3>{day.date}</h3>
                             <img src={day.day.condition.icon} alt="conditions"></img>
